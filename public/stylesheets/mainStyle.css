@@ -1,0 +1,86 @@
+:root {
+    --black: #222;
+    --white-black: #303030;
+    --green: #00bc80;
+    --white: #fff;
+    --offwhite: #434343;
+    --red: #e74c3c;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+}
+.main-container .title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    letter-spacing: .5rem;
+}
+.main-container .title h3 {
+    color: var(--green);
+}
+.one-m {
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    gap: 3rem;
+    background-color: var(--white-black);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 1px solid var(--offwhite);
+}
+.one-m div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    text-shadow:black 1px 2px 2px;
+    flex: .3;
+}
+.one-m div:last-child {
+    flex: .7;
+    color: var(--white);
+    text-shadow: black 2px 2px 2px;
+}
+.one-m div:last-child p {
+    color: var(--green);
+    text-shadow: black 1px 1px 1px;
+
+}
+.one-m div:last-child h1 {
+    overflow-wrap: anywhere;
+}
+body {
+    background-color: var(--black);
+}
+.one-m:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all linear 150ms;
+}
+.btn-container {
+    margin-top: 2rem;
+}
+.btn-container a{
+    padding: 1rem 3rem;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 1rem;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    text-shadow: black 1px 1px 1px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.btn-container a:hover {
+    cursor: pointer;
+    color: var(--red);
+    background-color: white;
+}

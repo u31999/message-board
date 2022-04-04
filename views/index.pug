@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div(class='main-container')
+    div(class='title')
+      h1= title
+      h3='You Are Welcome' 
+    div(class ='message-board') 
+      each val in messages 
+        div(class='one-m')
+          div 
+            h1= val.user
+          div
+            h1= val.text
+            p= val.added
+    div(class='btn-container')
+        a(href='/new')='Add New Message'

@@ -1,0 +1,9 @@
+extends layout
+block content 
+    div(class='form-container')
+        div(class='f-title')='New Message'
+        div(class='f-body')
+            form(method='POST' action='/new')
+                input(type="text" placeholder='Your Name' name='theName' required)
+                input(type="text" placeholder='Your Message' name='theMessage' required)
+                button(type='submit')='Submit'
